@@ -70,104 +70,11 @@ Add Book to Cart (Authenticated User)
 
 Increase Quantity if already exists
 
-View User Cart
+# Order place
+after the payment
 
-🧪 API Endpoints
-🔹 Auth APIs
-Register
-POST /api/auth/register
-
-Response:
-
-{
-  "message": "User Registered Successfully"
-}
-Login
-POST /api/auth/login
-
-Response:
-
-{
-  "token": "eyJhbGciOiJIUzI1NiIs...",
-  "message": "Login Successful"
-}
-🔹 Book APIs
-Method	Endpoint	Access
-GET	/api/books	Public
-POST	/api/books	Admin
-PUT	/api/books/{id}	Admin
-DELETE	/api/books/{id}	Admin
-🔹 Cart APIs
-Method	Endpoint	Access
-POST	/api/cart	Authenticated
-GET	/api/cart	Authenticated
-
-Header Required:
-
-Authorization: Bearer <JWT_TOKEN>
-🗄️ Database Configuration
-
-Update application.properties:
-
-spring.datasource.url=jdbc:mysql://localhost:3306/virtual_bookstore
-spring.datasource.username=root
-spring.datasource.password=yourpassword
-
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-▶️ How To Run
-
-Clone Repository
-
-git clone https://github.com/yourusername/virtual-bookstore.git
-
-Open in IntelliJ / Eclipse
-
-Configure MySQL
-
-Run Application
-
-mvn spring-boot:run
-
-Test APIs using Postman
-
-🧠 Industry Standards Followed
-
-DTO Pattern (No Entity Exposure)
-
-Global Exception Handling (@RestControllerAdvice)
-
-Clean Architecture (Controller → Service → Repository)
-
-Logger instead of System.out
-
-Validation Annotations (@Valid, @NotNull)
-
-No Hardcoded Messages (Constants Used)
-
-Proper HTTP Status Codes
-
-JWT Stateless Security
-
-Role-Based Access Control
-
-📌 Future Enhancements
-
-Payment Gateway Integration (Stripe / Razorpay)
-
-Order Management Module
-
-Recommendation System
-
-Pagination & Sorting
-
-Refresh Token Implementation
-
-Swagger API Documentation
-
-Unit Testing (JUnit + Mockito)
-
-Docker Deployment
+# payment 
+succsess
 
 👨‍💻 Author
 
