@@ -44,47 +44,7 @@ Login → JWT Generated
 Client stores token
 Protected APIs require:
 Authorization: Bearer <token>
-📂 Project Structure
-com.example.vertualbookstore
-│
-├── config
-│   └── JwtUtil.java
-│
-├── controller
-│   ├── AuthController.java
-│   ├── BookController.java
-│   └── CartController.java
-│
-├── service
-│   ├── AuthService.java
-│   ├── AuthServiceImpl.java
-│   ├── BookService.java
-│   └── CartService.java
-│
-├── repository
-│   ├── UserRepository.java
-│   ├── BookRepository.java
-│   └── CartRepository.java
-│
-├── entity
-│   ├── User.java
-│   ├── Book.java
-│   ├── CartItem.java
-│   └── Role.java
-│
-├── dto
-│   ├── RegisterRequest.java
-│   ├── LoginRequest.java
-│   ├── AuthResponse.java
-│   ├── RegisterResponse.java
-│   └── CartRequestDto.java
-│
-├── exception
-│   ├── GlobalExceptionHandler.java
-│   └── Custom Exceptions
-│
-└── constant
-    └── MessageConstants.java
+
 📦 Features
 👤 User Module
 
